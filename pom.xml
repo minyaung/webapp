@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.simplilearn</groupId>
 	<artifactId>webapp</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>webapp</name>
 	<description>A web app for an online book shop.</description>
@@ -30,11 +31,18 @@
 	</dependencies>
 
 	<build>
+		<finalName>webapp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+                		<groupId>org.apache.maven.plugins</groupId>
+                		<artifactId>maven-war-plugin</artifactId>
+                		<version>3.2.2</version>
+             		</plugin>
 		</plugins>
 	</build>
 
