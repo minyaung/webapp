@@ -29,9 +29,9 @@ public class WebappApplicationTests {
         driver.quit();
     }
 
-    // @Test
-    // public void testCasePassed()
-    // {
-    //     Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Welcome to Tomcat Maven Application Home Page!')]")).isDisplayed());
-    // }
+    @Test
+    public void testCasePassed()
+    {
+        Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Welcome to Tomcat Maven Application Home Page!')]")).isDisplayed());
+    }
 }
